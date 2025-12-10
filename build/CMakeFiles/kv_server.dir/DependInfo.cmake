@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/luoluo/github/kv_project/src/TcpConnection.cpp" "CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o" "gcc" "CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o.d"
+  "/home/luoluo/github/kv_project/src/TcpServer.cpp" "CMakeFiles/kv_server.dir/src/TcpServer.cpp.o" "gcc" "CMakeFiles/kv_server.dir/src/TcpServer.cpp.o.d"
   "/home/luoluo/github/kv_project/src/main.cpp" "CMakeFiles/kv_server.dir/src/main.cpp.o" "gcc" "CMakeFiles/kv_server.dir/src/main.cpp.o.d"
   )
 

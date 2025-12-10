@@ -129,6 +129,91 @@ kv_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/build
 .PHONY : kv_server/fast
 
+#=============================================================================
+# Target rules for targets named kv_client
+
+# Build rule for target.
+kv_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kv_client
+.PHONY : kv_client
+
+# fast build rule for target.
+kv_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_client.dir/build.make CMakeFiles/kv_client.dir/build
+.PHONY : kv_client/fast
+
+src/TcpConnection.o: src/TcpConnection.cpp.o
+.PHONY : src/TcpConnection.o
+
+# target to build an object file
+src/TcpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o
+.PHONY : src/TcpConnection.cpp.o
+
+src/TcpConnection.i: src/TcpConnection.cpp.i
+.PHONY : src/TcpConnection.i
+
+# target to preprocess a source file
+src/TcpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpConnection.cpp.i
+.PHONY : src/TcpConnection.cpp.i
+
+src/TcpConnection.s: src/TcpConnection.cpp.s
+.PHONY : src/TcpConnection.s
+
+# target to generate assembly for a file
+src/TcpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpConnection.cpp.s
+.PHONY : src/TcpConnection.cpp.s
+
+src/TcpServer.o: src/TcpServer.cpp.o
+.PHONY : src/TcpServer.o
+
+# target to build an object file
+src/TcpServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpServer.cpp.o
+.PHONY : src/TcpServer.cpp.o
+
+src/TcpServer.i: src/TcpServer.cpp.i
+.PHONY : src/TcpServer.i
+
+# target to preprocess a source file
+src/TcpServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpServer.cpp.i
+.PHONY : src/TcpServer.cpp.i
+
+src/TcpServer.s: src/TcpServer.cpp.s
+.PHONY : src/TcpServer.s
+
+# target to generate assembly for a file
+src/TcpServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/src/TcpServer.cpp.s
+.PHONY : src/TcpServer.cpp.s
+
+src/client.o: src/client.cpp.o
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_client.dir/build.make CMakeFiles/kv_client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_client.dir/build.make CMakeFiles/kv_client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_client.dir/build.make CMakeFiles/kv_client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -161,7 +246,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... kv_client"
 	@echo "... kv_server"
+	@echo "... src/TcpConnection.o"
+	@echo "... src/TcpConnection.i"
+	@echo "... src/TcpConnection.s"
+	@echo "... src/TcpServer.o"
+	@echo "... src/TcpServer.i"
+	@echo "... src/TcpServer.s"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

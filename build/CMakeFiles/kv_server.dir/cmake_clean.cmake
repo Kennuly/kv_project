@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o"
+  "CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o.d"
+  "CMakeFiles/kv_server.dir/src/TcpServer.cpp.o"
+  "CMakeFiles/kv_server.dir/src/TcpServer.cpp.o.d"
   "CMakeFiles/kv_server.dir/src/main.cpp.o"
   "CMakeFiles/kv_server.dir/src/main.cpp.o.d"
   "kv_server"

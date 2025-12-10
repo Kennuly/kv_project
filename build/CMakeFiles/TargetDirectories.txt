@@ -1,3 +1,4 @@
 /home/luoluo/github/kv_project/build/CMakeFiles/kv_server.dir
+/home/luoluo/github/kv_project/build/CMakeFiles/kv_client.dir
 /home/luoluo/github/kv_project/build/CMakeFiles/edit_cache.dir
 /home/luoluo/github/kv_project/build/CMakeFiles/rebuild_cache.dir
