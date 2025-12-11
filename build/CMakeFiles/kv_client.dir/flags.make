@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/luoluo/github/kv_project/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

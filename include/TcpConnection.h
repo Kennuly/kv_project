@@ -10,9 +10,12 @@
 class TcpConnection
 {
 public:
-    TcpConnection(int, sockaddr_in);
+    TcpConnection(int conn_fd, sockaddr_in client_addr);
     ~TcpConnection();
     void start();
+    
+    //返回连接对应的文件描述符fd
+    int fd() const {return conn_fd_;}
 private:
     void handleRead();
 private:

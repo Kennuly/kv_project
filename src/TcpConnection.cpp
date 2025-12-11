@@ -1,4 +1,5 @@
 #include "TcpConnection.h"
+#include <cerrno>
 #include <cstdio>
 #include <iterator>
 #include <netinet/in.h>
@@ -27,15 +28,30 @@ void TcpConnection::handleRead()
     while(true)
     {
         ssize_t n = recv(conn_fd_, buf, BUF_SIZE - 1, 0);
-        if(n <= 0)
+        if(n == 0)
         {
+            //客户端关闭
             std::cout << "client disconnected" << std::endl;
+            close(conn_fd_);
             break;
         }
-        buf[n] = '\0';
-        std::string req(buf);
-        while(!req.empty() && (req.back() == '\n' || req.back() == '\r'))   req.pop_back();
-        std::string reqs = (req == "ping") ? "ping\n" : "unknow\n";
-        send(conn_fd_, reqs.data(), reqs.size(), 0);
+        else if(n > 0)
+        {
+            std::string msg(buf, n);
+            std::cout << "recv: " << msg;
+            std::string resq = msg;
+            send(conn_fd_, resq.data(), resq.size(), 0);
+        }
+        else 
+        {
+            if(errno == EAGAIN || errno == EWOULDBLOCK)
+            {
+                //边缘触发完了
+                break;
+            }
+            std::cerr << "Read error" << std::endl;
+            close(conn_fd_);
+            return;
+        }
     }
 }

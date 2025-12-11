@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/kv_server.dir/src/main.cpp.o CMakeFiles/kv_server.dir/src/TcpServer.cpp.o CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o -o kv_server 
+/usr/bin/c++ -g CMakeFiles/kv_server.dir/src/main.cpp.o CMakeFiles/kv_server.dir/src/TcpServer.cpp.o CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o -o kv_server 

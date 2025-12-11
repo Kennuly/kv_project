@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/luoluo/github/kv_project/build",
-  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include  -o CMakeFiles/kv_server.dir/src/main.cpp.o -c /home/luoluo/github/kv_project/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include -g -o CMakeFiles/kv_server.dir/src/main.cpp.o -c /home/luoluo/github/kv_project/src/main.cpp",
   "file": "/home/luoluo/github/kv_project/src/main.cpp"
 },
 {
   "directory": "/home/luoluo/github/kv_project/build",
-  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include  -o CMakeFiles/kv_server.dir/src/TcpServer.cpp.o -c /home/luoluo/github/kv_project/src/TcpServer.cpp",
+  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include -g -o CMakeFiles/kv_server.dir/src/TcpServer.cpp.o -c /home/luoluo/github/kv_project/src/TcpServer.cpp",
   "file": "/home/luoluo/github/kv_project/src/TcpServer.cpp"
 },
 {
   "directory": "/home/luoluo/github/kv_project/build",
-  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include  -o CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o -c /home/luoluo/github/kv_project/src/TcpConnection.cpp",
+  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include -g -o CMakeFiles/kv_server.dir/src/TcpConnection.cpp.o -c /home/luoluo/github/kv_project/src/TcpConnection.cpp",
   "file": "/home/luoluo/github/kv_project/src/TcpConnection.cpp"
 },
 {
   "directory": "/home/luoluo/github/kv_project/build",
-  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include  -o CMakeFiles/kv_client.dir/src/client.cpp.o -c /home/luoluo/github/kv_project/src/client.cpp",
+  "command": "/usr/bin/c++  -I/home/luoluo/github/kv_project/include -g -o CMakeFiles/kv_client.dir/src/client.cpp.o -c /home/luoluo/github/kv_project/src/client.cpp",
   "file": "/home/luoluo/github/kv_project/src/client.cpp"
 }
 ]
